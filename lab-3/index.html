@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivering Custom Fonts to Browsers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
+    <style>
+        body {
+            font-family: 'Bangers', cursive;
+            background-color: #ffeb3b;
+            color: #d50000;
+            line-height: 1.6;
+            margin: 0;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ecf0f1;
+            text-align: center;
+            margin: 0;
+        }
+
+        h2 {
+            color: #3498db;
+            text-align: center;
+        }
+
+        ol {
+            padding-left: 40px;
+        }
+
+        code {
+            background-color: #ecf0f1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+
+        pre {
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            overflow: auto;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .steps {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Delivering Custom Fonts to Browsers</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Font Overview: Bangers</h2>
+            <ol>
+                <li><strong>Font Style:</strong> Bangers is a fun, comic-style font perfect for a playful look.</li>
+                <li><strong>Usage:</strong> Ideal for headers, posters, and playful designs.</li>
+                <li><strong>Design:</strong> Bold and rounded letters give it a lively and energetic vibe.</li>
+                <li><strong>Readability:</strong> While best for larger text, it's still legible in smaller sizes.</li>
+                <li><strong>Compatibility:</strong> Well-supported across modern browsers and platforms.</li>
+                <li><strong>Performance:</strong> Efficient loading from a CDN ensures quick display.</li>
+            </ol>
+        </div>
+        <div class="steps">
+            <p>This section explains how to use a custom font from the Google Fonts CDN.</p>
+            <h2>Steps to Use Google Fonts</h2>
+            <ol>
+                <li><strong>Include Google Fonts Link:</strong> Add a link to the Google Fonts stylesheet in the `<head>` section of your HTML:
+                    <pre><code>&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"&gt;</code></pre>
+                </li>
+                <li><strong>Apply Font in CSS:</strong> Use the font-family specified in the Google Fonts link in your CSS styles:
+                    <pre><code>body {
+    font-family: 'Bangers', cursive;
+}</code></pre>
+                </li>
+            </ol>
+            <p>By following these steps, the Bangers font will be loaded from the Google Fonts CDN and applied to the entire document.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Last updated:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+
+</html>
