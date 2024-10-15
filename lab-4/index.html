@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4 - Vishnu Priya</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+        background-color: pink;
+      }
+
+      article {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+      }
+
+      h1 {
+        font-size: 36px;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 28px;
+        padding-bottom: 5px;
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+
+      p,
+      li {
+        font-size: 16px;
+      }
+
+      ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background: #ddd;
+        margin: 20px 0;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 14px;
+        color: #777;
+        margin-top: 20px;
+      }
+
+      .addendum {
+        padding: 15px;
+        margin-top: 20px;
+      }
+
+      .addendum h2 {
+        font-size: 24px;
+      }
+
+      .addendum ol {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>Vishnu Priya</h1>
+      <p>
+        +1 9286002757<br />
+        <a href="mailto:vishnu@nau.edu">vishnu@nau.edu</a><br />
+        Flagstaff, AZ 86001<br />
+      </p>
+      <hr />
+
+      <h2>Summary</h2>
+      <p>
+        Detail-oriented Software Developer with 8 months of experience
+        conducting analysis and research to come up with solutions to solve
+        common problems.
+      </p>
+      <hr />
+
+      <h2>Skills</h2>
+      <ul>
+        <li>C Programming</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <hr />
+
+      <h2>Experience</h2>
+      <h3>Software Developer, Cognizant</h3>
+      <p><em>01/2023 - 12/2023</em></p>
+      <hr />
+
+      <h2>Education and Training</h2>
+      <h3>Bachelor of Technology, ECE</h3>
+      <p><em>Malla Reddy, Hyderabad, Telangana - GPA: 8.2/10</em></p>
+
+      <h3>Master of Science, Computer Science</h3>
+      <p><em>Northern Arizona University, Flagstaff, AZ</em></p>
+      <hr />
+
+      <h2>Accomplishments</h2>
+      <ul>
+        <li>Achieved best intern award at Cognizant</li>
+      </ul>
+      <hr />
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>Generative AI Badges</li>
+        <li>Statistics with Python</li>
+      </ul>
+      <hr />
+
+      <h2>Languages</h2>
+      <ul>
+        <li>English</li>
+        <li>Telugu</li>
+        <li>Hindi</li>
+      </ul>
+    </article>
+
+    <article class="addendum" style="text-align: center">
+      <h2>Addendum</h2>
+      <p>
+        I used “Arial, sans-serif” for font since it’s legible and makes the
+        resume simple to look at. For the headings, the main one is 36px- this
+        is to ensure that my name pops out; section titles are 28px, subheadings
+        are 22px – they effectively present information in a hierarchical form.
+        To bring slight more readability, I have set the main text to 16px,
+        which I believe is quite handy for the average web reader. I took pink
+        as the background color because it would make the page look less serious
+        and black for text since it was easier on the eye. It’s important
+        because the footer text is rather gray to ensure that it doesn’t
+        distract the viewers’ attention. To provide the content with space I
+        increased the width of the body and article by 20px of padding. I also
+        increased the padding between the headings and sections as well to
+        ensure they were well separated.
+      </p>
+    </article>
+
+    <footer>
+      <p>
+        Last updated:
+        <span id="lastModified"></span>
+      </p>
+    </footer>
+
+    <script>
+      var x = document.lastModified;
+      document.getElementById("lastModified").textContent = x;
+    </script>
+  </body>
+</html>
