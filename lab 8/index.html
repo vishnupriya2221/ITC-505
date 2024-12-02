@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Web Form</title>
+    <script>
+        function validateForm() {
+            var firstName = document.getElementById("first-name").value;
+            var lastName = document.getElementById("last-name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            if (firstName == "" || lastName == "" || email == "" || password == "" || confirmPassword == "") {
+                alert("All fields must be filled out.");
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            alert("Form submitted successfully!");
+            return true;
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/[&<>"']/g, function(match) {
+                return {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[match];
+            });
+        }
+
+        function handleFormSubmission(event) {
+            event.preventDefault(); 
+
+            var firstName = escapeHtml(document.getElementById("first-name").value);
+            var lastName = escapeHtml(document.getElementById("last-name").value);
+            var email = escapeHtml(document.getElementById("email").value);
+            var password = escapeHtml(document.getElementById("password").value);
+            var confirmPassword = escapeHtml(document.getElementById("confirm-password").value);
+
+            
+
+            console.log('Sanitized First Name:', firstName);
+            console.log('Sanitized Last Name:', lastName);
+            console.log('Sanitized Email:', email);
+            console.log('Sanitized Password:', password);
+            console.log('Sanitized Confirm Password:', confirmPassword);
+
+            alert("Form data sanitized and ready for submission!");
+        }
+    </script>
+</head>
+<body>
+    <h2>Secure Registration Form</h2>
+    <form onsubmit="validateForm(); handleFormSubmission(event)">
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" name="first-name"><br><br>
+
+        <label for="last-name">Last Name:</label><br>
+        <input type="text" id="last-name" name="last-name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input type="password" id="confirm-password" name="confirm-password"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
