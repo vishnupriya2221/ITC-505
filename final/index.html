@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights Out Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lights Out Game</h1>
+    <p>Turn off all the lights to win. Click a square to toggle its state and adjacent squares!</p>
+    <div id="game-board"></div>
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+    <script src="game.js"></script>
+</body>
+</html>
