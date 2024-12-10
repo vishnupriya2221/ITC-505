@@ -10,6 +10,50 @@
     <h1>Lights Out Game</h1>
     <p>Turn off all the lights to win. Click a square to toggle its state and adjacent squares!</p>
     <div id="game-board"></div>
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            This was a project that focused on developing an engaging web-base game using the else tools in the Html, Css and JavaScript languages. The idea was to deliver a Lights Out puzzle game based on the grid that can change the cells on/off and achieve a certain victory state.        </p>
+        <h3>Process and Creative Choices</h3>
+        <ul>
+            <li>
+                **Dynamic Grid Creation**: The grid does not have to be manually set up because JavaScript can use loops to define it. This makes the game easily scalablility of the game for any other grid sizes.
+            </li>
+            <li>
+                **Visual Feedback**: To make the website visually appealing and to give users an engaging experience the CSS transitions and hover effects were included.
+            </li>
+            <li>
+                **Randomization**: To guarantee replayability, several arbitrary toggles are operated for an initial random state of the board.
+            </li>
+        </ul>
+        <h3>Challenges Faced</h3>
+        <ul>
+            <li>
+                **State Management**: Following up on the current state of cells needed considerable planning. Applying a 2D array to the grid and applying ‘data-*’ attributes to cells were helpful in this regard.
+            </li>
+            <li>
+                **Responsive Design**: This was particularly difficult to achieve until certain methods were adopted to ensure that the cells almost perfectly replicated a square shape across different devices. This was done with the help of CSS property, called `aspect-ratio`.
+            </li>
+            <li>
+                **Debugging Toggle Logic**: The concept of toggling cells and their neighbors with the help of the two logical functions had to be tested and that involved lots of coding and debugging.
+            </li>
+        </ul>
+        <h3>Insights Gained</h3>
+        <ul>
+            <li>
+                The importance of modular code: Some beneficial aspects emerged when the code was divided and working with multiple lines of code was avoided.
+            </li>
+            <li>
+                This is true since integrating CSS with javascript interactivity can improve the overall appearance of CSS.
+            </li>
+            <li>
+                Randomization makes a game of such type more interesting and hard, thereby increasing the fun of playing it to different levels.
+            </li>
+        </ul>
+        <p>
+            In conclusion, this project was a great experience of developing an interesting application, as well as an encounter with structural and technical challenges.
+        </p>
+    </section>
     <footer>
         <p>Last updated: <span id="lastModified"></span></p>
     </footer>
@@ -19,3 +63,4 @@
     <script src="game.js"></script>
 </body>
 </html>
+
