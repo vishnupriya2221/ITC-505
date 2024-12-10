@@ -16,6 +16,7 @@ h1 {
 p {
     font-size: 1.1rem;
     margin: 15px 0;
+    color: #e3f2fd;
 }
 
 #game-board {
@@ -29,7 +30,7 @@ p {
 }
 
 .cell {
-    background-color: #ffd54f; 
+    background-color: #ffd54f;
     border: 2px solid #ffa000;
     width: 100%;
     aspect-ratio: 1; 
@@ -38,7 +39,7 @@ p {
 }
 
 .cell.is-off {
-    background-color: #455a64;
+    background-color: #455a64; 
     border-color: #263238;
 }
 
@@ -51,3 +52,48 @@ footer {
     font-size: 0.9rem;
     color: #cfd8dc;
 }
+
+#addendum {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 800px;
+    background: #ffffff10;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: #ffffff;
+}
+
+#addendum h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffca28;
+}
+
+#addendum p,
+#addendum ul {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+#addendum ul {
+    padding-left: 20px;
+}
+
+#addendum ul li {
+    margin-bottom: 10px;
+}
+
+#addendum h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #ffeb3b;
+}
+
+#addendum p:last-child {
+    margin-top: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
